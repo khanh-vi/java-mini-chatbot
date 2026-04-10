@@ -46,14 +46,6 @@ src/main/resources/
 ## 📸 Demo
 ![Chatbot UI](image.png)
 
-## 🚀 Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine.
-
-### Prerequisites
-* Java Development Kit (JDK) 17 or higher.
-* Maven installed.
-* A valid [Google Gemini API Key](https://aistudio.google.com/).
 
 ## 📄 License
 
