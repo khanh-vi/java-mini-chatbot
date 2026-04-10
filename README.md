@@ -31,6 +31,7 @@ The application follows a simple client-server architecture:
 
 ## 📁 Project Structure
 
+```bash
 src/main/java/com/example/chatbot/
 ├── config/        # Configuration classes  
 ├── controller/    # REST controllers  
@@ -40,6 +41,7 @@ src/main/java/com/example/chatbot/
 src/main/resources/
 ├── static/        # Frontend (HTML, CSS, JS)  
 ├── application.properties  
+```
 
 ## 📸 Demo
 ![Chatbot UI](image.png)
