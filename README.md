@@ -1,0 +1,93 @@
+# 🤖 Mini Java AI Chatbot
+
+[![Java](https://img.shields.io/badge/Java-17%2B-blue.svg)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-brightgreen.svg)](https://spring.io/projects/spring-boot)
+
+This project is a lightweight AI chatbot built with Spring Boot, designed as part of my **Java Programming** coursework. It demonstrates how to integrate modern AI services (Google Gemini API) into a full-stack web application.
+
+This project serves as a foundational learning tool, and I plan to implement new features and improvements in the future! 🚀
+
+## ✨ Features
+
+* **AI Integration:** Connects to the Google Gemini API to generate intelligent, real-time responses.
+* **Rich Text Rendering:** Supports Markdown (via `marked.js`) and LaTeX math equations (via `MathJax`) for formatted and readable AI outputs.
+* **Modern UI:** Features a "Soft Playful" design with a responsive and user-friendly chat interface.
+* **Extensible Architecture:** Built with Spring Boot, making it easy to add new endpoints and services later.
+
+## 🛠️ Tech Stack
+
+* **Backend:** Java, Spring Boot, Maven
+* **Frontend:** HTML, CSS, Vanilla JavaScript
+* **External Libraries:** Marked.js (Markdown parsing), MathJax (Mathematical notation)
+* **API:** Google Generative AI (Gemini)
+
+## 🏗️ Architecture
+
+The application follows a simple client-server architecture:
+
+* **Frontend (HTML/CSS/JS):** Handles UI and user interaction
+* **Backend (Spring Boot):** Processes requests and communicates with Gemini API
+* **External API (Google Gemini):** Generates AI responses
+
+## 📁 Project Structure
+
+src/main/java/com/example/chatbot/
+├── config/        # Configuration classes  
+├── controller/    # REST controllers  
+├── dto/           # Request/Response objects  
+├── service/       # Business logic  
+
+src/main/resources/
+├── static/        # Frontend (HTML, CSS, JS)  
+├── application.properties  
+
+## 📸 Demo
+![Chatbot UI](image.png)
+
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+* Java Development Kit (JDK) 17 or higher.
+* Maven installed.
+* A valid [Google Gemini API Key](https://aistudio.google.com/).
+
+### Installation
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+   
+**2. Configure the API Key**
+    
+Navigate to `src/main/resources/application.properties` and add your Gemini API key:
+
+```properties
+server.port=8080
+google.gemini.api-key=YOUR_API_KEY_HERE
+```
+> ⚠️ Do not commit your real API key. Use environment variables in production.
+
+**3. Run the application**
+
+Open your terminal in the root directory of the project and run:
+```bash
+mvn clean spring-booand
+```
+
+**4. Access the Chatbot**
+
+Open your web browser and go to: http://localhost:8080
+
+## 🗺️ Roadmap (Future Updates)
+* Add conversation history (Memory) so the AI remembers context.
+* Support switching between different AI models.
+* Add a "Copy to clipboard" button fo AI responses.
+* ...
+    
+## 📄 License
+
+This project is licensed under the MIT License.

@@ -1,0 +1,29 @@
+# Maven
+target/
+*.log
+
+# Java
+*.class
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / secrets
+application.properties
+
+# Build files
+*.jar
+*.war
+
+# Others
+node_modules/
+.github/
+*2.js
+*2.html
+*2.css

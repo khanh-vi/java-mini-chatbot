@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Assistant</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="brand-badge">✨ AI Assistant</div>
+                <h1 class="logo">Java AI</h1>
+                <p class="sidebar-subtitle">Hỏi bất kỳ điều gì. </p>
+                <button class="new-chat-btn" id="new-chat-btn">+ New Chat</button>
+            </div>
+
+            <div class="sidebar-card quick-actions">
+                <div class="sidebar-card-title">Quick Prompts</div>
+                <div class="prompt-list">
+                    <button class="prompt-chip" type="button" data-fill="Giải thích chủ đề này theo cách thật đơn giản và dễ hiểu.">
+                        Giai thich de hieu
+                    </button>
+                    <button class="prompt-chip" type="button">Tom tat noi dung</button>
+                    <button class="prompt-chip" type="button">So sanh 2 khai niem</button>
+                </div>
+            </div>
+
+            <div class="chat-history">
+                <div class="history-title">Recent Chats</div>
+                <ul id="history-list">
+                    <li class="history-item active">New consersation</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="chat-header">
+                <div class="chat-header-text">
+                    <h2>AI Assistant</h2>
+                    <p>Hỏi bất kỳ điều gì: hoc tap, cong nghe, y tuong va hon the nua</p>
+                </div>
+
+                <div class="header-tools">
+                    <button class="tool-badge pink" type="button" data-fill="Giải thích chủ đề này thật đơn giản và dễ hiểu.">
+                        🫧 Explain
+                    </button>
+                    <button class="tool-badge yellow" type="button" data-fill="Tóm tắt nội dung này thành các ý chính ngắn gọn.">
+                        🌼 Summarize
+                    </button>
+                    <button class="tool-badge blue" type="button" data-fill="Cho tôi 3 ý tưởng sáng tạo liên quan đến chủ đề này.">
+                        ✨ Create
+                    </button>
+                </div>
+            </header>
+
+            <section class="chat-messages" id="chat-messages">
+                <div class="message assistant-message">
+                    <div class="message-role">AI</div>
+                    <div class="message-text">
+                        Xin chào! Tôi là trợ lý AI. Hãy hỏi tôi bất kỳ điều gì.
+                    </div>
+                </div>
+            </section>
+
+
+
+            <button id="scroll-latest-btn" class="scroll-latest-btn" type="button">
+                ↓ Lastest
+            </button>
+
+            <footer class="chat-input-area">
+                <div class="input-wrapper">
+                    <div class="input-decor">💬</div>
+
+                    <textarea
+                        id="user-input"
+                        placeholder="Nhập câu hỏi của bạn..."
+                        rows="1"></textarea>
+
+                    <button id="send-btn" type="button">Send</button>
+                </div>
+
+                <p class="input-note">
+                    AI có thể mắc lỗi. Hãy kiểm tra các thông tin quan trọng.
+                </p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
