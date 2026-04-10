@@ -55,41 +55,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 * Maven installed.
 * A valid [Google Gemini API Key](https://aistudio.google.com/).
 
-### Installation
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-```
-   
-**2. Configure the API Key**
-    
-Navigate to `src/main/resources/application.properties` and add your Gemini API key:
-
-```properties
-server.port=8080
-google.gemini.api-key=YOUR_API_KEY_HERE
-```
-> ⚠️ Do not commit your real API key. Use environment variables in production.
-
-**3. Run the application**
-
-Open your terminal in the root directory of the project and run:
-```bash
-mvn clean spring-boot: run
-```
-
-**4. Access the Chatbot**
-
-Open your web browser and go to: http://localhost:8080
-
-## 🗺️ Roadmap (Future Updates)
-* Add conversation history (Memory) so the AI remembers context.
-* Support switching between different AI models.
-* Add a "Copy to clipboard" button fo AI responses.
-* ...
-    
 ## 📄 License
 
 This project is licensed under the MIT License.
