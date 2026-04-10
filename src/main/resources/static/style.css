@@ -471,12 +471,10 @@ body {
     }
 }
 
-/* để nút nổi bám theo main-content */
 .main-content {
     position: relative;
 }
 
-/* thinking dots */
 .thinking-wrap {
     display: inline-flex;
     align-items: center;
@@ -521,7 +519,6 @@ body {
     }
 }
 
-/* nút scroll to latest */
 .scroll-latest-btn {
     position: absolute;
     right: 28px;
@@ -556,7 +553,6 @@ body {
     transform: translateY(-2px) scale(1.03);
 }
 
-/* prompt chip có cảm giác bấm được hơn */
 .prompt-chip {
     user-select: none;
 }
