@@ -21,16 +21,10 @@ public class ChatController
     }
 
     @PostMapping("/chat")
-    /*     public ChatResponse chat(@RequestBody ChatResquest request)
-    {
-        String reply = aiService.ask(request.getMessage());
-        return new ChatResponse(reply);
-    }*/
 
     public ResponseEntity<ChatResponse> chat(@RequestBody ChatRequest request)
     {
         try {
-            // Kiểm tra tin nhắn trống để tránh lỗi gọi API vô ích
             if (request.getMessage() == null || request.getMessage().isEmpty()) {
                 return ResponseEntity.badRequest().body(new ChatResponse("Tin nhắn không được để trống."));
             }
@@ -38,7 +32,6 @@ public class ChatController
             String reply = aiService.ask(request.getMessage());
             return ResponseEntity.ok(new ChatResponse(reply));
         } catch (Exception e) {
-            // In lỗi ra terminal để bạn dễ debug
             e.printStackTrace(); 
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(new ChatResponse("Lỗi hệ thống: " + e.getMessage()));
