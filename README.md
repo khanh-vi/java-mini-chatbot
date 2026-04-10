@@ -77,7 +77,7 @@ google.gemini.api-key=YOUR_API_KEY_HERE
 
 Open your terminal in the root directory of the project and run:
 ```bash
-mvn clean spring-booand
+mvn clean spring-boot: run
 ```
 
 **4. Access the Chatbot**
