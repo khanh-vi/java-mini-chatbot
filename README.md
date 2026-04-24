@@ -7,21 +7,21 @@ This project is a lightweight AI chatbot built with Spring Boot, designed as par
 
 This project serves as a foundational learning tool, and I plan to implement new features and improvements in the future! 🚀
 
-## ✨ Features
+## Features
 
 * **AI Integration:** Connects to the Google Gemini API to generate intelligent, real-time responses.
 * **Rich Text Rendering:** Supports Markdown (via `marked.js`) and LaTeX math equations (via `MathJax`) for formatted and readable AI outputs.
 * **Modern UI:** Features a "Soft Playful" design with a responsive and user-friendly chat interface.
 * **Extensible Architecture:** Built with Spring Boot, making it easy to add new endpoints and services later.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Backend:** Java, Spring Boot, Maven
 * **Frontend:** HTML, CSS, Vanilla JavaScript
 * **External Libraries:** Marked.js (Markdown parsing), MathJax (Mathematical notation)
 * **API:** Google Generative AI (Gemini)
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows a simple client-server architecture:
 
@@ -29,7 +29,7 @@ The application follows a simple client-server architecture:
 * **Backend (Spring Boot):** Processes requests and communicates with Gemini API
 * **External API (Google Gemini):** Generates AI responses
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 src/main/java/com/example/chatbot/
@@ -43,10 +43,6 @@ src/main/resources/
 ├── application.properties  
 ```
 
-## 📸 Demo
+## Demo
 ![Chatbot UI](image.png)
 
-
-## 📄 License
-
-This project is licensed under the MIT License.
